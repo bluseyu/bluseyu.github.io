@@ -20,19 +20,22 @@
     var CONFIG = {"hostname":"username.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="不会撸代码的设计师不是好的产品经理。  个人简介：  下过乡上过山，吃过皇粮跳过槽。扛过枪打过炮，站过讲台放过哨。  少年即巅峰，自此隐入尘。喜新不厌旧，寡欲离名利。曾舞枪弄棍，且才思敏捷。今人生过半，又碌碌无为。  外表斯文，内心狂野。喜欢冒险，崇尚激情。做事顶真，不知变通。心比天高，百无一用。多才多艺，只能自嗨。认知爆表，转化全无。脑洞惊人，成就为0。余生了了，命运杳杳。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="关于我">
-<meta property="og:url" content="https://username.github.io/about/index.html">
+  <meta name="description" content="记录搭建Hexo博客时遇到的各种问题和解决方法: 如部署时顺序不对，导致404错误；安装主题，出现各种问题；Next主题左侧导航失效；标签去哪里了；首页只显示摘要，该如何做">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客部署踩坑记">
+<meta property="og:url" content="https://username.github.io/2026/03/12/Hexo%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E8%AE%B0/index.html">
 <meta property="og:site_name" content="子奚若，莫之知">
-<meta property="og:description" content="不会撸代码的设计师不是好的产品经理。  个人简介：  下过乡上过山，吃过皇粮跳过槽。扛过枪打过炮，站过讲台放过哨。  少年即巅峰，自此隐入尘。喜新不厌旧，寡欲离名利。曾舞枪弄棍，且才思敏捷。今人生过半，又碌碌无为。  外表斯文，内心狂野。喜欢冒险，崇尚激情。做事顶真，不知变通。心比天高，百无一用。多才多艺，只能自嗨。认知爆表，转化全无。脑洞惊人，成就为0。余生了了，命运杳杳。">
+<meta property="og:description" content="记录搭建Hexo博客时遇到的各种问题和解决方法: 如部署时顺序不对，导致404错误；安装主题，出现各种问题；Next主题左侧导航失效；标签去哪里了；首页只显示摘要，该如何做">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-03-11T08:39:01.000Z">
-<meta property="article:modified_time" content="2026-03-12T02:28:51.560Z">
+<meta property="article:published_time" content="2026-03-12T05:14:30.000Z">
+<meta property="article:modified_time" content="2026-03-12T07:06:20.259Z">
 <meta property="article:author" content="子奚若">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Next主题">
+<meta property="article:tag" content="部署">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://username.github.io/about/">
+<link rel="canonical" href="https://username.github.io/2026/03/12/Hexo%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E8%AE%B0/">
 
 
 <script id="page-configurations">
@@ -40,13 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>关于我 | 子奚若，莫之知
-</title>
+  <title>Hexo博客部署踩坑记 | 子奚若，莫之知</title>
   
 
 
@@ -193,55 +195,112 @@
       <div class="main-inner">
         <div class="content-wrap">
           
-  
-  
 
-          <div class="content page posts-expand">
+          <div class="content post posts-expand">
             
 
     
-    
-    
-    <div class="post-block" lang="zh-CN">
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://username.github.io/2026/03/12/Hexo%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="子奚若">
+      <meta itemprop="description" content="酸秀才的书袋子，左手科技右手人文">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="子奚若，莫之知">
+    </span>
       <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo博客部署踩坑记
+        </h1>
 
-<h1 class="post-title" itemprop="name headline">关于我
-</h1>
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
 
-<div class="post-meta">
+              <time title="创建时间：2026-03-12 13:14:30 / 修改时间：15:06:20" itemprop="dateCreated datePublished" datetime="2026-03-12T13:14:30+08:00">2026-03-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tech/" itemprop="url" rel="index"><span itemprop="name">开发</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">记录搭建Hexo博客时遇到的各种问题和解决方法: 如部署时顺序不对，导致404错误；安装主题，出现各种问题；Next主题左侧导航失效；标签去哪里了；首页只显示摘要，该如何做</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>一直有搭建一个自己的博客的想法，总是因为各种借口，迟迟未付诸于行动。拖着拖着，竟然到了2026年。几年的时间，如流沙入手，最后消失得无影踪。</p>
+<p>其实，无论什么事，不管想得如何复杂，如何细致，都敌不过试着去做一下。<code>An ounce of action is worth a ton of theory</code>（一盎司的行动胜过一吨想法）</p>
+<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h2 id="踩坑记"><a href="#踩坑记" class="headerlink" title="踩坑记"></a>踩坑记</h2><ol>
+<li><p>部署时顺序不对，导致404错误</p>
+</li>
+<li><p>安装主题，出现各种问题</p>
+</li>
+<li><p>Next主题左侧导航失效</p>
+</li>
+<li><p>标签去哪里了</p>
+</li>
+<li><p>首页只显示摘要，该如何做</p>
+</li>
+</ol>
+
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/Next%E4%B8%BB%E9%A2%98/" rel="tag"># Next主题</a>
+              <a href="/tags/%E9%83%A8%E7%BD%B2/" rel="tag"># 部署</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2026/03/10/%E7%94%B2%E5%AD%90%E6%97%A5%EF%BC%9A%E5%8F%A4%E4%BA%BA%E7%9A%84%E2%80%9C%E7%B3%BB%E7%BB%9F%E9%87%8D%E5%90%AF%E6%97%A5%E2%80%9D/" rel="prev" title="甲子日：古人的“系统重启日”">
+      <i class="fa fa-chevron-left"></i> 甲子日：古人的“系统重启日”
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2026/03/12/Hexo%20Next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%EF%BC%8C%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86/" rel="next" title="Hexo Next主题美化，看这一篇就够了">
+      Hexo Next主题美化，看这一篇就够了 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-          <blockquote>
-<p>不会撸代码的设计师不是好的产品经理。</p>
-</blockquote>
-<p><strong>个人简介：</strong></p>
-<ul>
-<li><p>下过乡上过山，吃过皇粮跳过槽。<br>扛过枪打过炮，站过讲台放过哨。</p>
-</li>
-<li><p>少年即巅峰，自此隐入尘。<br>喜新不厌旧，寡欲离名利。<br>曾舞枪弄棍，且才思敏捷。<br>今人生过半，又碌碌无为。</p>
-</li>
-<li><p>外表斯文，内心狂野。<br>喜欢冒险，崇尚激情。<br>做事顶真，不知变通。<br>心比天高，百无一用。<br>多才多艺，只能自嗨。<br>认知爆表，转化全无。<br>脑洞惊人，成就为0。<br>余生了了，命运杳杳。</p>
-</li>
-</ul>
-
-      </div>
-      
-      
-      
-    </div>
-    
-
-    
-    
-    
 
 
           </div>
@@ -292,6 +351,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B"><span class="nav-number">1.</span> <span class="nav-text">部署流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B8%A9%E5%9D%91%E8%AE%B0"><span class="nav-number">2.</span> <span class="nav-text">踩坑记</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
