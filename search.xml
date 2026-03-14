@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo Next主题美化，看这一篇就够了</title>
-    <url>/2026/03/12/Hexo%20Next%E4%B8%BB%E9%A2%98%E7%BE%8E%E5%8C%96%EF%BC%8C%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86/</url>
+    <title>Hexo博客部署踩坑记</title>
+    <url>/2026/03/12/Hexo%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E8%AE%B0/</url>
+    <content><![CDATA[<p>一直有搭建一个自己的博客的想法，总是因为各种借口，迟迟未付诸于行动。拖着拖着，竟然到了2026年。几年的时间，如流沙入手，最后消失得无影踪。</p>
+<p>其实，无论什么事，不管想得如何复杂，如何细致，都敌不过试着去做一下。<code>An ounce of action is worth a ton of theory</code>（一盎司的行动胜过一吨想法）</p>
+<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h2 id="踩坑记"><a href="#踩坑记" class="headerlink" title="踩坑记"></a>踩坑记</h2><ol>
+<li><p>部署时顺序不对，导致404错误</p>
+</li>
+<li><p>安装主题，出现各种问题</p>
+</li>
+<li><p>Next主题左侧导航失效</p>
+</li>
+<li><p>标签去哪里了</p>
+</li>
+<li><p>首页只显示摘要，该如何做</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>Next主题</tag>
+        <tag>部署</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2026/03/10/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>玩转Hexo Next主题，看这一篇就够了</title>
+    <url>/2026/03/12/%E7%8E%A9%E8%BD%ACHexo%20Next%E4%B8%BB%E9%A2%98%EF%BC%8C%E7%9C%8B%E8%BF%99%E4%B8%80%E7%AF%87%E5%B0%B1%E5%A4%9F%E4%BA%86/</url>
     <content><![CDATA[<h2 id="Next主题介绍"><a href="#Next主题介绍" class="headerlink" title="Next主题介绍"></a>Next主题介绍</h2><p>Next主题是Hexo博客的一个非常流行的主题，它提供了丰富的功能和灵活的定制选项。Next主题的安装和配置都比较简单，但是要想完全发挥它的功能，就需要进行一些美化和定制。</p>
-<h2 id="Next主题安装及启用"><a href="#Next主题安装及启用" class="headerlink" title="Next主题安装及启用"></a>Next主题安装及启用</h2><h3 id="1-安装Next主题"><a href="#1-安装Next主题" class="headerlink" title="1. 安装Next主题"></a>1. 安装Next主题</h3><p>在Hexo博客目录下，执行以下命令安装Next主题：</p>
+<h2 id="🛠️-Next主题安装及启用"><a href="#🛠️-Next主题安装及启用" class="headerlink" title="🛠️ Next主题安装及启用"></a>🛠️ Next主题安装及启用</h2><h3 id="1-安装Next主题"><a href="#1-安装Next主题" class="headerlink" title="1. 安装Next主题"></a>1. 安装Next主题</h3><p>在Hexo博客目录下，执行以下命令安装Next主题：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-设置Next主题"><a href="#2-设置Next主题" class="headerlink" title="2. 设置Next主题"></a>2. 设置Next主题</h3><p>在Hexo博客目录下，编辑 <code>_config.yml</code> 文件，将 <code>theme</code> 字段设置为 <code>next</code>：</p>
@@ -39,16 +84,16 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo generate &amp;&amp; hexo server</span><br></pre></td></tr></table></figure>
 
 
-<h2 id="Next主题美化"><a href="#Next主题美化" class="headerlink" title="Next主题美化"></a>Next主题美化</h2><p>Next主题提供了许多定制选项，如修改颜色、字体、布局等。在Hexo博客目录下，编辑 <code>themes/next/_config.yml</code> 文件，进行主题配置。</p>
+<h2 id="🎨-Next主题美化"><a href="#🎨-Next主题美化" class="headerlink" title="🎨 Next主题美化"></a>🎨 Next主题美化</h2><p>Next主题提供了许多定制选项，如修改颜色、字体、布局等。在Hexo博客目录下，编辑 <code>themes/next/_config.yml</code> 文件，进行主题配置。</p>
 <p>可以根据个人喜好和需求，定制Next主题的各种功能和样式，美化博客。</p>
 <h4 id="1-添加头像"><a href="#1-添加头像" class="headerlink" title="1. 添加头像"></a>1. 添加头像</h4><ul>
 <li>将头像（如 <code>avatar.jpg</code>）放入 <code>/my-blog/themes/next/source/images/</code></li>
 <li>在主题配置中设置：<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">/images/avatar.jpg</span></span><br><span class="line"><span class="attr">rounded:</span> <span class="literal">true</span>    <span class="comment"># 圆角</span></span><br><span class="line"><span class="attr">rotated:</span> <span class="literal">true</span>    <span class="comment"># 鼠标悬停旋转</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="2-社交链接"><a href="#2-社交链接" class="headerlink" title="2. 社交链接"></a>2. 社交链接</h4><p>在主题配置文件中添加：</p>
+<h4 id="👫-2-社交链接"><a href="#👫-2-社交链接" class="headerlink" title="👫 2. 社交链接"></a>👫 2. 社交链接</h4><p>在主题配置文件中添加：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">GitHub:</span> <span class="string">https://github.com/yourname</span> <span class="string">||</span> <span class="string">github</span></span><br><span class="line"><span class="attr">Twitter:</span> <span class="string">https://twitter.com/yourname</span> <span class="string">||</span> <span class="string">twitter</span></span><br><span class="line"><span class="attr">Weibo:</span> <span class="string">https://weibo.com/yourname</span> <span class="string">||</span> <span class="string">weibo</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="3-启用搜索功能"><a href="#3-启用搜索功能" class="headerlink" title="3. 启用搜索功能"></a>3. 启用搜索功能</h4><p>安装插件：</p>
+<h4 id="🔍-3-启用搜索功能"><a href="#🔍-3-启用搜索功能" class="headerlink" title="🔍 3. 启用搜索功能"></a>🔍 3. 启用搜索功能</h4><p>安装插件：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
 
 <p>在站点配置文件中添加：</p>
@@ -57,28 +102,28 @@
 <p>在主题配置中启用：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">local_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">trigger:</span> <span class="string">manual</span></span><br><span class="line">  <span class="attr">top_n_per_article:</span> <span class="number">1</span></span><br><span class="line">  <span class="attr">unescape:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">preload:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="4-阅读进度条"><a href="#4-阅读进度条" class="headerlink" title="4. 阅读进度条"></a>4. 阅读进度条</h4><p>在主题配置(<code>themes/next/_config.yml</code>)中：</p>
+<h4 id="📖-4-阅读进度条"><a href="#📖-4-阅读进度条" class="headerlink" title="📖 4. 阅读进度条"></a>📖 4. 阅读进度条</h4><p>在主题配置(<code>themes/next/_config.yml</code>)中：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">reading_progress:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">top</span></span><br><span class="line">  <span class="attr">color:</span> <span class="string">&quot;#37c6c0&quot;</span></span><br><span class="line">  <span class="attr">height:</span> <span class="string">2px</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>开启文章目录与阅读进度<br>在<code>themes/next/_config.yml</code>中：<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">toc:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">left</span></span><br><span class="line"></span><br><span class="line">  <span class="attr">back2top:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">sidebar:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">scrollpercent:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
 </ul>
-<h4 id="5-自定义代码块样式"><a href="#5-自定义代码块样式" class="headerlink" title="5. 自定义代码块样式"></a>5. 自定义代码块样式</h4><p>创建自定义样式文件：</p>
+<h4 id="📰-5-自定义代码块样式"><a href="#📰-5-自定义代码块样式" class="headerlink" title="📰 5. 自定义代码块样式"></a>📰 5. 自定义代码块样式</h4><p>创建自定义样式文件：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p /my-blog/themes/next/source/css/_custom</span><br><span class="line"><span class="built_in">touch</span> /my-blog/themes/next/source/css/_custom/custom.styl</span><br></pre></td></tr></table></figure>
 
 <p>添加内容：</p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">code</span> &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#ff7600</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="number">#fbf7f8</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.highlight</span>, pre &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">5px</span> <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">5px</span>;</span><br><span class="line">  <span class="attribute">border-radius</span>: <span class="number">3px</span>;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#d6d6d6</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="6-文章摘要显示设置"><a href="#6-文章摘要显示设置" class="headerlink" title="6. 文章摘要显示设置"></a>6. 文章摘要显示设置</h4><p>在主题配置文件中设置：</p>
+<h4 id="📑-6-文章摘要显示设置"><a href="#📑-6-文章摘要显示设置" class="headerlink" title="📑 6. 文章摘要显示设置"></a>📑 6. 文章摘要显示设置</h4><p>在主题配置文件中设置：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">excerpt_description:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <p>在主题配置文件中添加：</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">auto_excerpt:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">length:</span> <span class="number">200</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="7-页脚添加访客量"><a href="#7-页脚添加访客量" class="headerlink" title="7. 页脚添加访客量"></a>7. 页脚添加访客量</h4><p>使用不蒜子，不同于百度和谷歌那种详细的统计，可以用两行代码，简单的在网页上显示本站访问量和访问人数。</p>
+<h4 id="🌐-7-页脚添加访客量"><a href="#🌐-7-页脚添加访客量" class="headerlink" title="🌐 7. 页脚添加访客量"></a>🌐 7. 页脚添加访客量</h4><p>使用不蒜子，不同于百度和谷歌那种详细的统计，可以用两行代码，简单的在网页上显示本站访问量和访问人数。</p>
 <p>具体到 next 主题来说，在 footer 模板（<code>themes/next/layout/_partials/footer.swig</code>）底部添加以下代码就行：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 不蒜子统计 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;powered-by&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-user-md&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;busuanzi_container_site_uv&quot;</span>&gt;</span></span><br><span class="line">        本站访客数:<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;busuanzi_value_site_uv&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">&quot;post-meta-divider&quot;</span>&gt;</span>|<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;busuanzi_container_site_pv&quot;</span>&gt;</span></span><br><span class="line">        本站访问量<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">&quot;busuanzi_value_site_pv&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="8-站点地图"><a href="#8-站点地图" class="headerlink" title="8. 站点地图"></a>8. 站点地图</h4><p>首先安装下 npm 对应插件，然后在 hexo 和 next 主题中分别打开配置。</p>
+<h4 id="🚩-8-站点地图"><a href="#🚩-8-站点地图" class="headerlink" title="🚩 8. 站点地图"></a>🚩 8. 站点地图</h4><p>首先安装下 npm 对应插件，然后在 hexo 和 next 主题中分别打开配置。</p>
 <ul>
 <li>安装插件</li>
 </ul>
@@ -92,7 +137,7 @@
 </ul>
 <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">    <span class="attr">sitemap:</span> <span class="string">/sitemap.xml</span> <span class="string">||</span> <span class="string">sitemap</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="9-相册"><a href="#9-相册" class="headerlink" title="9. 相册"></a>9. 相册</h4><p>相册功能可以使用 next 插件 <code>group picture</code> 来实现，原理很简单，就是利用 next 主题的 <code>Tag Plugin</code> 这种语法提供了一种展示图片的布局。需要以下几步：</p>
+<h4 id="🖼️-9-相册"><a href="#🖼️-9-相册" class="headerlink" title="🖼️ 9. 相册"></a>🖼️ 9. 相册</h4><p>相册功能可以使用 next 插件 <code>group picture</code> 来实现，原理很简单，就是利用 next 主题的 <code>Tag Plugin</code> 这种语法提供了一种展示图片的布局。需要以下几步：</p>
 <ol>
 <li>首先 hexo new page photos 新建一个名为 photos 的标签页，并且在 themes&#x2F;next&#x2F;languages&#x2F;zh-CN.yml 中的 menu 一项下面添加 photos: 相册，这样在首页菜单栏才会显示中文相册。</li>
 <li>其次，可以直接在 source&#x2F;photos&#x2F;index.md 写文章，并在需要插入图片的时候用以下方式来组织你的图片列表：</li>
@@ -113,7 +158,7 @@
     <title>甲子日：古人的“系统重启日”</title>
     <url>/2026/03/10/%E7%94%B2%E5%AD%90%E6%97%A5%EF%BC%9A%E5%8F%A4%E4%BA%BA%E7%9A%84%E2%80%9C%E7%B3%BB%E7%BB%9F%E9%87%8D%E5%90%AF%E6%97%A5%E2%80%9D/</url>
     <content><![CDATA[<p>2026年2月19日，正月初三，吃过早饭后，老爸把我叫过去，神神秘秘地塞给我一个拇指大小的镀金小葫芦，说：“今天甲子日，开天门，你懂的。把葫芦收好。”</p>
-<p>脑海里“嗡”地一下，我懂啥？葫芦—-福禄？甲子日—-一元伊始、万象更新？</p>
+<p>脑海里“嗡”地一下，我懂啥？葫芦–福禄？甲子日–一元伊始、万象更新？</p>
 <p>我的“CPU”开始高速运转，在容量有限的“硬盘”中疯狂搜索，终于想起来了。</p>
 <p>那是一个盛夏的清晨，天刚蒙蒙亮，微风拂过，院子前的老槐树沙沙作响，花香四溢。我搬了个凳子，坐在门口，看着老爸在堂屋里摆香炉、点檀香，嘴里还念叨着：“甲子日，天门开，万象新。”</p>
 <p>“天门开了？”我眨着眼睛，不解地问：“天门在哪里？进了天门，就能成仙吗？”</p>
@@ -147,7 +192,7 @@
 <li>汉高祖刘邦选择在甲子日称帝，希望借此承天受命。</li>
 </ul>
 </li>
-<li><p><strong>“百年一遇”的天文巧合</strong>：当甲子日与重要的节气相遇，便会形成备受关注的时间奇点。<br> 1949年10月1日，新中国成立，恰逢<strong>甲子日</strong>——虽非甲子年，但这一重合，被许多人视为“天命所归”的文化象征。这个开启中国历史新纪元的伟大日子，增添了一层传统文化的祥瑞色彩。</p>
+<li><p><strong>“百年一遇”的天文巧合</strong>：当甲子日与重要的节气相遇，便会形成备受关注的时间奇点。<br>1949年10月1日，新中国成立，恰逢<strong>甲子日</strong>——虽非甲子年，但这一重合，被许多人视为“天命所归”的文化象征。这个开启中国历史新纪元的伟大日子，增添了一层传统文化的祥瑞色彩。</p>
 </li>
 </ul>
 <h3 id="📜-四、诗词里的甲子：文人的时光哲思"><a href="#📜-四、诗词里的甲子：文人的时光哲思" class="headerlink" title="📜 四、诗词里的甲子：文人的时光哲思"></a><strong>📜</strong> <strong>四、诗词里的甲子：文人的时光哲思</strong></h3><p>古人早把“甲子”写进了诗里：</p>
@@ -270,36 +315,89 @@
       <tags>
         <tag>甲子</tag>
         <tag>开天门</tag>
-        <tag>更新</tag>
         <tag>天干</tag>
         <tag>地支</tag>
+        <tag>传统文化</tag>
+        <tag>更新</tag>
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客部署踩坑记</title>
-    <url>/2026/03/12/Hexo%E5%8D%9A%E5%AE%A2%E8%B8%A9%E5%9D%91%E8%AE%B0/</url>
-    <content><![CDATA[<p>一直有搭建一个自己的博客的想法，总是因为各种借口，迟迟未付诸于行动。拖着拖着，竟然到了2026年。几年的时间，如流沙入手，最后消失得无影踪。</p>
-<p>其实，无论什么事，不管想得如何复杂，如何细致，都敌不过试着去做一下。<code>An ounce of action is worth a ton of theory</code>（一盎司的行动胜过一吨想法）</p>
-<h2 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h2><h2 id="踩坑记"><a href="#踩坑记" class="headerlink" title="踩坑记"></a>踩坑记</h2><ol>
-<li><p>部署时顺序不对，导致404错误</p>
-</li>
-<li><p>安装主题，出现各种问题</p>
-</li>
-<li><p>Next主题左侧导航失效</p>
-</li>
-<li><p>标签去哪里了</p>
-</li>
-<li><p>首页只显示摘要，该如何做</p>
-</li>
-</ol>
+    <title>阴阳：中国文化的“底层代码”</title>
+    <url>/2026/03/14/%E9%98%B4%E9%98%B3%EF%BC%9A%E4%B8%AD%E5%8D%8E%E6%96%87%E6%98%8E%E7%9A%84%E2%80%9C%E5%BA%95%E5%B1%82%E4%BB%A3%E7%A0%81%E2%80%9D/</url>
+    <content><![CDATA[<h3 id="一、开篇：从一碗热汤说起"><a href="#一、开篇：从一碗热汤说起" class="headerlink" title="一、开篇：从一碗热汤说起"></a><strong>一、开篇：从一碗热汤说起</strong></h3><p>假如你穿越回一千年前的唐朝街头，想请一位长者吃饭。你端上一碗刚出锅、热气腾腾的羊肉汤，长者可能会皱眉说：“太燥了，阳盛阴虚，喝了要流鼻血。”你若再端上一盘冰镇瓜果，他又会摇头：“太寒了，阴盛阳衰，吃了要闹肚子。”</p>
+<p>最后，他教你把羊肉炖得烂熟，加几片清凉的萝卜，文火慢煨，直到热气内敛，汤色醇厚。喝下去，浑身舒坦，通体泰和。长者抚须大笑：“这就对了！这就是<strong>阴阳</strong>。阴阳者，平衡也。”</p>
+<p>你看，阴阳从来不是挂在道观里高深莫测的符咒，也不是算命先生嘴里故弄玄虚的术语。它最初，就是中国人对冷暖、昼夜、男女、动静最朴素的感知。它藏在一日三餐的烟火气里，躲在四季更替的落叶中。</p>
+<p>如果说西方文化喜欢把世界拆解成原子、分子，追求“分”的极致；那么中国文化则偏爱将万物编织成一张网，追求“平衡”的智慧。而编织这张网的经纬线，正是<strong>阴阳</strong>。它是中国文化的基座，是中国人看待宇宙的“底层代码”。</p>
+<p>今天，我们就试着拨开历史的迷雾，来聊聊这个塑造了中华民族性格五千年的核心概念。</p>
+<h3 id="二、起源：从晒太阳到哲学大厦"><a href="#二、起源：从晒太阳到哲学大厦" class="headerlink" title="二、起源：从晒太阳到哲学大厦"></a><strong>二、起源：从晒太阳到哲学大厦</strong></h3><p><strong>1. 本义：向光与背光</strong></p>
+<p>“阴阳”二字，最早其实非常“物理”。</p>
+<p>在甲骨文和金文中，“阴”（陰）字左边是个“阜”（土山），右边是“今”和“云”，意为云层遮蔽山体，阳光照不到的地方，阴暗潮湿；“阳”（陽）字同样有个“阜”，右边却是“昜”（太阳升起），意为阳光普照的高坡，温暖明亮。</p>
+<p>《诗经·大雅·公刘》里有句名句：“相其阴阳，观其流泉。”说的是周人的祖先公刘在选址建都时，要考察山南山北的光照情况，哪里向阳适合居住，哪里背阴适合蓄水。这时候的阴阳，纯粹是地理学和气象学的概念：<strong>向日为阳，背日为阴</strong>。</p>
+<p>古人日出而作，日落而息。他们发现，太阳出来的地方温暖、活跃、生长；太阳落下的地方寒冷、静止、收藏。这种最直观的生命体验，成为了阴阳哲学的胚胎。</p>
+<p><strong>2. 升华：从现象到规律</strong></p>
+<p>到了西周晚期和春秋时期，聪明的中国人开始不满足于描述现象，他们试图寻找现象背后的规律。</p>
+<p>伯阳父（一说为史伯）在解释地震时说：“阳伏而不能出，阴迫而不能蒸，于是有地震。”这是历史上第一次用阴阳二气的相互作用来解释自然灾害，标志着阴阳从“地理概念”跃升为“宇宙动力”。</p>
+<p>真正让阴阳理论系统化、哲学化的，是《易经》。《易传·系辞》那句振聋发聩的话，奠定了此后两千年的基调：“<strong>一阴一阳之谓道。</strong>”</p>
+<p>在这里，阴阳不再仅仅是冷和热，它们变成了宇宙间两种相反相成、互根互用的基本力量。</p>
+<ul>
+<li><strong>阳</strong>代表：天、日、男、刚、动、热、明、上升、发散……</li>
+<li><strong>阴</strong>代表：地、月、女、柔、静、寒、暗、下降、收敛……</li>
+</ul>
+<p>但这并不是简单的二元对立。老子在《道德经》里说得更透彻：<code>“万物负阴而抱阳，冲气以为和。”</code>万物都背着阴、抱着阳，阴阳二气互相激荡，才达到了和谐的境界。就像太极图，黑中有白点，白中有黑点，阴至极则生阳，阳至极则生阴，流转不息，生生不灭。</p>
+<h3 id="三、衍变：渗透进中国人的骨血"><a href="#三、衍变：渗透进中国人的骨血" class="headerlink" title="三、衍变：渗透进中国人的骨血"></a><strong>三、衍变：渗透进中国人的骨血</strong></h3><p>阴阳学说一旦确立，就像水银泻地一般，渗透进了中国文化的每一个毛孔。它不仅是哲学，更是医学、艺术、建筑、政治乃至日常生活的操作手册。</p>
+<p><strong>1. 医道同源：身体的小宇宙</strong></p>
+<p>如果你去过中医馆，一定听过“阴阳失调”这个词。在中医眼里，人体就是一个小宇宙。</p>
+<p>《黄帝内经》开篇就讲：<code>“阴阳者，天地之道也，万物之纲纪，变化之父母，生杀之本始。”</code></p>
+<ul>
+<li>身体健康，就是“阴平阳秘”，阴阳平衡。</li>
+<li>生病，就是阴阳打架了。发烧是阳盛，畏寒是阴盛；亢奋是阳亢，抑郁是阴凝。</li>
+</ul>
+<p>名医治病，其实就是“调琴”。药性有寒热温凉（阴阳），针灸有补泻手法（阴阳）。著名的“冬病夏治”，就是利用夏天阳气最旺的时候，去驱散冬天潜伏在体内的阴寒之气。这哪里是治病，分明是在帮身体找回与天地同步的节奏。</p>
+<p><strong>2. 建筑风水：居住的韵律</strong></p>
+<p>走进一座传统的四合院或江南园林，你也能看到阴阳的舞蹈。</p>
+<p>坐北朝南，是为了“负阴抱阳”——背靠北面的实墙（阴&#x2F;静&#x2F;靠山），面向南面的阳光（阳&#x2F;动&#x2F;开阔）。<br>庭院设计讲究“虚实相生”。高墙大院是实（阳），天井水面是虚（阴）；假山是刚（阳），流水是柔（阴）。<br>苏州园林里，那些曲折的回廊、漏窗，就是在制造光影的流动。阳光透过花窗洒在地上，斑驳陆离，那一刻，光（阳）与影（阴）在墙上写诗。如果房子全是实的，那是监狱；全是虚的，那是帐篷。只有阴阳搭配，才是家。</p>
+<p><strong>3. 诗词书画：审美的灵魂</strong></p>
+<p>中国艺术的最高境界，往往也是阴阳的和谐。</p>
+<p>书法里，粗笔为阳，细笔为阴；方折为阳，圆转为阴；枯笔飞白是阳，浓墨重彩是阴。王羲之的《兰亭序》，之所以被誉为天下第一行书，就是因为他在笔墨的轻重、快慢、疏密之间，找到了完美的阴阳平衡，如行云流水，又似惊鸿照影。</p>
+<p>诗词更是如此。<br>杜甫的“星垂平野阔，月涌大江流”，星月是阴，江流平野是阳，动静结合，气象万千。<br>苏轼的“人有悲欢离合，月有阴晴圆缺”，直接把人生的起伏（人事之阴阳）与自然的循环（天象之阴阳）对应起来，瞬间治愈了无数失意的心灵。</p>
+<p>甚至在戏曲舞台上，红脸关公代表忠义刚烈（阳），白脸曹操代表奸诈多疑（阴），脸谱的颜色本身就是一种阴阳符号的视觉化。</p>
+<p><strong>4. 处世哲学：中庸的智慧</strong></p>
+<p>阴阳思维深刻影响了中国人的性格。我们不喜欢走极端，讲究“中庸”，讲究“过犹不及”。</p>
+<ul>
+<li>做人太刚强容易折断（纯阳则折），太软弱容易受欺（纯阴则废），所以要“外圆内方”，“刚柔并济”。</li>
+<li>做事太激进容易翻车，太保守容易落后，所以要“张弛有度”，“进退有据”。</li>
+</ul>
+<p>这种智慧，让中华民族在几千年的风雨中，既能像水一样柔弱适应，又能像山一样坚韧不拔。</p>
+<h3 id="四、基座：为何说是中国文化的基石？"><a href="#四、基座：为何说是中国文化的基石？" class="headerlink" title="四、基座：为何说是中国文化的基石？"></a><strong>四、基座：为何说是中国文化的基石？</strong></h3><p>有人问，古希腊有原子论，古印度有四大学说，为什么偏偏中国的“阴阳”能成为基座？</p>
+<p>因为<strong>阴阳提供了一种动态的、整体的、辩证的世界观</strong>。</p>
+<p><strong>第一，它解释了“变化”</strong>。<br>西方传统逻辑倾向于静态的定义（A是A，非A即非A）。而阴阳认为，世界是流动的。今天是晴天（阳），明天可能下雨（阴）；少年强壮（阳），老年衰弱（阴）。这种变化不是混乱的，而是有规律的循环。这让中国人在面对无常的命运时，拥有一种豁达：“否极泰来”“物极必反”。既然低谷（阴）之后必有高峰（阳），那当下的苦难又算得了什么？</p>
+<p><strong>第二，它构建了“关系”</strong>。<br>阴阳不是敌人，而是伴侣。没有阴，阳就无法显现；没有阳，阴就失去了意义。这种“互根”的思想，让中国文化极度重视“关系”与“和谐”。君臣、父子、夫妻、朋友，都不是单向的压迫，而是双向的责任与互动。家和万事兴，国和万事兴，天和万事兴。</p>
+<p><strong>第三，它确立了“天人合一”</strong>。<br>既然人和自然都由阴阳构成，那么人就不是自然的征服者，而是自然的一部分。我们要顺应天时，春生夏长，秋收冬藏。这种生态伦理，在今天看来，简直是超前的环保主义。</p>
+<p>可以说，不懂阴阳，就读不懂《红楼梦》里的盛衰兴亡，看不懂水墨画里的留白意境，也理解不了中国人那种“难得糊涂”背后的生存大智慧。它是我们文化基因里的双螺旋结构。</p>
+<h3 id="五、当下：古老智慧的现代回响"><a href="#五、当下：古老智慧的现代回响" class="headerlink" title="五、当下：古老智慧的现代回响"></a><strong>五、当下：古老智慧的现代回响</strong></h3><p>时光流转至21世纪，高楼大厦取代了茅檐低小，人工智能挑战着人类智慧。在这个快节奏、高压力的时代，阴阳学说过时了吗？</p>
+<p>恰恰相反，<strong>现代人比任何时候都更需要阴阳智慧</strong>。</p>
+<p><strong>1. 疗愈“内卷”与“焦虑”</strong><br>现代社会崇尚“阳”性价值：更快、更高、更强、更多、更亮。我们拼命工作（动），熬夜刷手机（耗神），追求极致的效率（刚）。结果呢？失眠、抑郁、亚健康泛滥。这是典型的“阳亢阴虚”。<br>弘扬传统文化，就是要提醒大家回归“阴”的智慧：<strong>学会慢下来，学会休息，学会独处，学会“无用之用”</strong>。<br>就像庄子说的“虚室生白”，给心灵留一点空白（阴），创造力（阳）才能迸发。提倡“躺平”并非消极，而是为了积蓄力量，是阴阳转换的必要过程。</p>
+<p><strong>2. 重塑“生态”与“可持续”</strong><br>工业文明过度索取自然资源，打破了地球的阴阳平衡，导致气候变暖、极端天气频发。这是大自然在警告我们“阴阳失调”了。<br>中国传统文化中的“取之有度，用之有节”，正是解决生态危机的良方。我们需要重新审视人与自然的关系，从“征服自然”转向“顺应自然”，追求绿色发展，这正是阴阳和谐观的现代实践。</p>
+<p><strong>3. 构建“包容”与“对话”</strong><br>在全球化遭遇逆流的今天，文明冲突论甚嚣尘上。西方中心主义或非此即彼的二元对立思维，往往加剧了矛盾。<br>阴阳思维告诉我们：“和而不同”。不同的文明、制度、价值观，就像阴与阳，看似对立，实则互补。世界不需要只有一种颜色，也不需要只有一种声音。用阴阳的智慧去处理国际关系、社会矛盾，倡导多元共存、对话协商，或许能开辟出一条人类命运共同体的新路。</p>
+<p><strong>如何弘扬</strong>？</p>
+<ul>
+<li><strong>生活化</strong>：别把阴阳供在神坛上。把它变成养生指南、职场减压法、家庭相处术。比如，告诉年轻人“加班是阳，睡觉是阴，只加班不睡觉就是找死”。</li>
+<li><strong>现代化</strong>：用科学的语言解读阴阳。比如，将阴阳平衡对应到神经系统的兴奋与抑制，对应到生态系统的输入与输出。让传统智慧穿上现代的外衣。</li>
+<li><strong>艺术化</strong>：通过电影、游戏、动漫等载体，讲好阴阳故事。像《哪吒之魔童降世》里的灵珠与魔丸，其实就是阴阳的变体，深受年轻人喜爱。</li>
+</ul>
+<h3 id="六、结语：在流转中安顿身心"><a href="#六、结语：在流转中安顿身心" class="headerlink" title="六、结语：在流转中安顿身心"></a><strong>六、结语：在流转中安顿身心</strong></h3><p>回望历史长河，阴阳如同一对无形的翅膀，承载着中华文明飞越了五千年的沧桑。</p>
+<p>它告诉我们：<br>黑夜再长，黎明终会到来（阴尽阳生）；<br>烈日再毒，凉风总会吹起（阳消阴长）；<br>人生再难，转机总在转角（物极必反）。</p>
+<p>在这个充满不确定性的时代，愿我们都能心中存有一幅太极图。<br>忙时，全力以赴，如骄阳似火（阳）；<br>闲时，静心读书，如明月清风（阴）。<br>得意时，不忘形，知“亢龙有悔”；<br>失意时，不气馁，信“否极泰来”。</p>
+<p>阴阳，不是宿命，而是一种节奏；不是迷信，而是一种清醒。<br>它是中国文化的基座，更是我们安顿身心的家园。</p>
+<p>当你下次感到疲惫或迷茫时，不妨抬头看看天，低头看看地，深吸一口气，对自己说一声：<br>“没关系，这只是阴阳在流转。调整呼吸，找回平衡，生活自会豁然开朗。”</p>
+<p>毕竟，<strong>一阴一阳之谓道，亦谓生活</strong>。</p>
 ]]></content>
       <categories>
-        <category>开发</category>
+        <category>人文</category>
       </categories>
       <tags>
-        <tag>Hexo</tag>
-        <tag>Next主题</tag>
-        <tag>部署</tag>
+        <tag>传统文化</tag>
+        <tag>阴阳</tag>
       </tags>
   </entry>
 </search>
