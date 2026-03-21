@@ -1175,7 +1175,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #eeff71;
+  background: #ff9db9;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2567,6 +2567,9 @@ code {
 li:not(:last-child) {
   margin-bottom: 10px;
 }
+p {
+  margin-bottom: 10px;
+}
 li p {
   list-height: 1.8;
   padding-bottom: 0;
@@ -2575,4 +2578,13 @@ p + ul,
 ol + ul {
   margin-top: 0;
   padding-top: 0;
+}
+h3 + ul>li {
+  margin-bottom: 5px !important;
+}
+.btn {
+  border-color: #444;
+}
+.btn:hover {
+  border-color: #111;
 }
